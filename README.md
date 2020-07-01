@@ -10,7 +10,7 @@ Compile LaTeX files in Julia using the [tectonic](https://github.com/tectonic-ty
 
 julia> using Tectonic
 
-julia> run(`$(tectonic()) file.tex`)
+julia> run(`$(Tectonic.binary()) file.tex`)
 ```
 
 This package wraps the [official binaries](https://github.com/tectonic-typesetting/tectonic/releases).
