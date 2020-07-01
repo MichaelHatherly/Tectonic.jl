@@ -12,3 +12,5 @@ julia> using Tectonic
 
 julia> run(`$(tectonic()) file.tex`)
 ```
+
+This package wraps the [official binaries](https://github.com/tectonic-typesetting/tectonic/releases).
