@@ -31,7 +31,7 @@ mktempdir() do temp_path
             elseif platform isa MacOS
                 "tectonic-latest-x86_64-apple-darwin.tar.gz"
             elseif platform isa Windows
-                "tectonic-latest-x86_64-pc-windows-gnu.exe"
+                "tectonic-latest-x86_64-pc-windows-msvc.exe"
             else
                 continue
             end
