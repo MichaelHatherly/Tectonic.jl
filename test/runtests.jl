@@ -2,11 +2,13 @@ using Test, Tectonic
 
 @testset "Tectonic" begin
     @test isfile(binary())
-    @test version() == "Tectonic 0.1.13-dev"
+    @test version() == v"0.1.13-dev"
     # Compile a file, clean up afterwards.
     @test !isfile("test.pdf")
     @test try
-        run(`$(binary()) test.tex`)
+        tectonic() do bin
+            run(`$bin test.tex`)
+        end
         true
     catch err
         rethrow(err)
