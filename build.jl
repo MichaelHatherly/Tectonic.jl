@@ -1,13 +1,17 @@
 using Pkg.Artifacts
 using Pkg.BinaryPlatforms
-using URIParser, FilePaths
+using URIParser
 
 pkgname = "tectonic"
-origin = "https://github.com/tectonic-typesetting/tectonic/releases/download/continuous"
-version = v"0.1.13-dev"
+origin = "https://github.com/tectonic-typesetting/tectonic/releases/download"
+version = v"0.3.3"
 build = 1
-release_info = read(download(joinpath(origin, "RELEASE-INFO.txt")), String)
-commit = match(r"^commit=(.+)$"m, release_info)[1]
+
+downloads = Dict(
+    "$origin/tectonic%40$version/tectonic-$version-x86_64-unknown-linux-musl.tar.gz" => Linux(:x86_64),
+    "$origin/tectonic%40$version/tectonic-$version-x86_64-pc-windows-msvc.zip" => Windows(:x86_64),
+    "$origin/tectonic%40$version/tectonic-$version-x86_64-apple-darwin.tar.gz" => MacOS(:x86_64),
+)
 
 build_path = joinpath(@__DIR__, "build")
 
@@ -17,42 +21,29 @@ mkpath(build_path)
 
 artifact_toml = joinpath(@__DIR__, "Artifacts.toml")
 
-platforms = [
-    Linux(:x86_64),
-    MacOS(:x86_64),
-    Windows(:x86_64),
-]
-
 mktempdir() do temp_path
-    for platform in platforms
-        download_url =
-            if platform isa Linux
-                "tectonic-latest-x86_64-unknown-linux-musl.tar.gz"
-            elseif platform isa MacOS
-                "tectonic-latest-x86_64-apple-darwin.tar.gz"
-            elseif platform isa Windows
-                "tectonic-latest-x86_64-pc-windows-msvc.exe"
-            else
-                continue
-            end
-        download_url = joinpath(origin, download_url)
-        download_filename = Path(temp_path) / Path(basename(Path(URI(download_url).path)))
+    for (url, platform) in downloads
+        file = basename(url)
+        @info "downloading" platform url file
+        download(url, file)
 
-        download(download_url, download_filename)
-
+        @info "unpacking" file
         product_hash = create_artifact() do artifact_dir
-            if extension(download_filename) == "exe"
-                cp(string(download_filename), joinpath(artifact_dir, "tectonic.exe"))
+            if endswith(file, ".zip")
+                run(`unzip $file -d $artifact_dir`)
+            elseif endswith(file, ".tar.gz")
+                run(`tar -xvf $file -C $artifact_dir`)
             else
-                run(Cmd(`tar -xvf $download_filename -C $artifact_dir`))
+                error("cannot unpack that: $file")
             end
-
             files = readdir(artifact_dir)
         end
+        @info "artifact" product_hash
 
-        archive_filename = "$pkgname-$commit-$(triplet(platform)).tar.gz"
+        archive_filename = "$pkgname-$version+$build-$(triplet(platform)).tar.gz"
         download_hash = archive_artifact(product_hash, joinpath(build_path, archive_filename))
 
+        @info "binding" archive_filename
         bind_artifact!(
             artifact_toml,
             "tectonic_bin",

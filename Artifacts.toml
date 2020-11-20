@@ -1,25 +1,25 @@
 [[tectonic_bin]]
 arch = "x86_64"
-git-tree-sha1 = "c3bb83fb7eea2f7829672d0cb9d9b5a0306b8354"
+git-tree-sha1 = "b5dab81c92c08359092d53481b13916fb7ec8a9c"
+os = "windows"
+
+    [[tectonic_bin.download]]
+    sha256 = "52c2258ffd4e62c36cdee737db3c8d6fa6e3e66dd06f114e568dcb9001f58d2b"
+    url = "https://github.com/MichaelHatherly/Tectonic.jl/releases/download/0.3.3%2B1/tectonic-0.3.3+1-x86_64-w64-mingw32.tar.gz"
+[[tectonic_bin]]
+arch = "x86_64"
+git-tree-sha1 = "05d1c5badbb3af76ec83b6439a8da44d56160063"
 libc = "glibc"
 os = "linux"
 
     [[tectonic_bin.download]]
-    sha256 = "fee2347ed0a5bb0dd303040f3e0ed04be131e19550672cf4ca6220c7e1832c71"
-    url = "https://github.com/MichaelHatherly/Tectonic.jl/releases/download/0.1.13-dev%2B1/tectonic-95ef2391b4c201b17f33362d5d07b5855d8c6461-x86_64-linux-gnu.tar.gz"
+    sha256 = "b3da7280685c557c6d904333dea00e94b74c98622b5511d6a0f273b9165065a6"
+    url = "https://github.com/MichaelHatherly/Tectonic.jl/releases/download/0.3.3%2B1/tectonic-0.3.3+1-x86_64-linux-gnu.tar.gz"
 [[tectonic_bin]]
 arch = "x86_64"
-git-tree-sha1 = "128e523428378539427555730b220d69c8dfc3b7"
+git-tree-sha1 = "ce37640347916fd6751a84fe84d45d94432df82e"
 os = "macos"
 
     [[tectonic_bin.download]]
-    sha256 = "7aebd074e587c1db069e67ef05afb4bd1e15c8bcb8d972d499035145b566088d"
-    url = "https://github.com/MichaelHatherly/Tectonic.jl/releases/download/0.1.13-dev%2B1/tectonic-95ef2391b4c201b17f33362d5d07b5855d8c6461-x86_64-apple-darwin14.tar.gz"
-[[tectonic_bin]]
-arch = "x86_64"
-git-tree-sha1 = "86cd62dae3fd69c106f0fb6d9d4fb30f6753bbe1"
-os = "windows"
-
-    [[tectonic_bin.download]]
-    sha256 = "26c45d319a959efcf422d8b5913661fc6662a1a73e3361859d25e4ade6ac0aa7"
-    url = "https://github.com/MichaelHatherly/Tectonic.jl/releases/download/0.1.13-dev%2B1/tectonic-95ef2391b4c201b17f33362d5d07b5855d8c6461-x86_64-w64-mingw32.tar.gz"
+    sha256 = "cc4511ea953b8a63b222010e74e0fb623af10cd8494f23bb1ff15a4ccfe7db71"
+    url = "https://github.com/MichaelHatherly/Tectonic.jl/releases/download/0.3.3%2B1/tectonic-0.3.3+1-x86_64-apple-darwin14.tar.gz"

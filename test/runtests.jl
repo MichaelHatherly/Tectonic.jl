@@ -2,7 +2,7 @@ using Test, Tectonic
 
 @testset "Tectonic" begin
     @test isfile(binary())
-    @test version() == v"0.1.13-dev"
+    @test version() == v"0.3.3"
     # Compile a file, clean up afterwards.
     @test !isfile("test.pdf")
     @test try
