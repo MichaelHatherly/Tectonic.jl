@@ -3,7 +3,7 @@ Wrapper module for [*tectonic*](https://github.com/tectonic-typesetting/tectonic
 """
 module Tectonic
 
-export binary, tectonic, version
+export binary, tectonic, version, Biber
 
 using Pkg.Artifacts
 
@@ -53,5 +53,7 @@ Path to *tectonic* binary.
     and clean up steps needed.
 """
 binary()
+
+include("Biber.jl")
 
 end # module

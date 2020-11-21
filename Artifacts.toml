@@ -1,3 +1,29 @@
+[[biber_bin]]
+arch = "x86_64"
+git-tree-sha1 = "716fcd1bfe883a5a9c5e05b34a62539b9913b917"
+os = "macos"
+
+    [[biber_bin.download]]
+    sha256 = "675fb93a2d8cfa52533d4b20423bf18ff1b799693466b91e92e115667bb9297d"
+    url = "https://github.com/MichaelHatherly/Tectonic.jl/releases/download/2.14%2B1/biber-2.14+1-x86_64-apple-darwin14.tar.gz"
+[[biber_bin]]
+arch = "x86_64"
+git-tree-sha1 = "55e62711a9a99b7fdada0d255c157bd10913b7f0"
+libc = "glibc"
+os = "linux"
+
+    [[biber_bin.download]]
+    sha256 = "5acadb273c686d2e10ba8ce3c587891a627bf509da4f576bb1dc29d3592cbc91"
+    url = "https://github.com/MichaelHatherly/Tectonic.jl/releases/download/2.14%2B1/biber-2.14+1-x86_64-linux-gnu.tar.gz"
+[[biber_bin]]
+arch = "x86_64"
+git-tree-sha1 = "d62a5f5a7456fd60110bd1cfc392dc6a264422b6"
+os = "windows"
+
+    [[biber_bin.download]]
+    sha256 = "831938bacb5c6a3de9894983b996e09450a7dd927afafda149a3204e2bcf39fd"
+    url = "https://github.com/MichaelHatherly/Tectonic.jl/releases/download/2.14%2B1/biber-2.14+1-x86_64-w64-mingw32.tar.gz"
+
 [[tectonic_bin]]
 arch = "x86_64"
 git-tree-sha1 = "b5dab81c92c08359092d53481b13916fb7ec8a9c"
