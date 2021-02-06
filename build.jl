@@ -1,11 +1,11 @@
 using Pkg.Artifacts
 using Pkg.BinaryPlatforms
-using URIParser
+using URIs
 
 function tectonic()
     pkgname = "tectonic"
     origin = "https://github.com/tectonic-typesetting/tectonic/releases/download"
-    version = v"0.3.3"
+    version = v"0.4.1"
     build = 1
 
     downloads = Dict(
@@ -53,7 +53,7 @@ function tectonic()
                 force=true,
                 download_info=Tuple[
                     (
-                     "https://github.com/MichaelHatherly/Tectonic.jl/releases/download/$(URIParser.escape("$(version)+$(build)"))/$archive_filename",
+                     "https://github.com/MichaelHatherly/Tectonic.jl/releases/download/$(URIs.escapeuri("$(version)+$(build)"))/$archive_filename",
                      download_hash
                     )
                 ]
