@@ -7,16 +7,7 @@ export biber
 
 using Pkg.Artifacts
 
-let __binary__ = Ref("")
-    global function __init__()
-        file = joinpath(@__DIR__, "..", "Artifacts.toml")
-        info = artifact_meta("biber_bin", file)
-        path = artifact_path(Base.SHA1(info["git-tree-sha1"]))
-        ext = Sys.iswindows() ? ".exe" : ""
-        __binary__[] = joinpath(path, "biber$(ext)")
-    end
-    global binary() = __binary__[]
-end
+binary() = joinpath(artifact"biber_bin", "biber$(Sys.iswindows() ? ".exe" : "")")
 
 """
     biber(f)

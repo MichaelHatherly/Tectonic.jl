@@ -32,16 +32,7 @@ Version of *tectonic* provided by this package.
 """
 version() = VersionNumber(lstrip(!isnumeric, tectonic(bin -> readchomp(`$bin --version`))))
 
-let __binary__ = Ref("")
-    global function __init__()
-        file = joinpath(@__DIR__, "..", "Artifacts.toml")
-        info = artifact_meta("tectonic_bin", file)
-        path = artifact_path(Base.SHA1(info["git-tree-sha1"]))
-        ext = Sys.iswindows() ? ".exe" : ""
-        __binary__[] = joinpath(path, "tectonic$(ext)")
-    end
-    global binary() = __binary__[]
-end
+binary() = joinpath(artifact"tectonic_bin", "tectonic$(Sys.iswindows() ? ".exe" : "")")
 
 """
 Path to *tectonic* binary.
