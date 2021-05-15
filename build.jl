@@ -65,7 +65,7 @@ end
 function biber()
     pkgname = "biber"
     origin = "https://sourceforge.net/projects/biblatex-biber/files/biblatex-biber"
-    version = "2.14"
+    version = "2.15"
     build = 1
 
     downloads = Dict(
