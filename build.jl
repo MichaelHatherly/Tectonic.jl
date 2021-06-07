@@ -5,7 +5,7 @@ using URIs
 function tectonic()
     pkgname = "tectonic"
     origin = "https://github.com/tectonic-typesetting/tectonic/releases/download"
-    version = v"0.4.1"
+    version = v"0.5.0"
     build = 1
 
     downloads = Dict(
@@ -53,7 +53,7 @@ function tectonic()
                 force=true,
                 download_info=Tuple[
                     (
-                     "https://github.com/MichaelHatherly/Tectonic.jl/releases/download/$(URIs.escapeuri("$(version)+$(build)"))/$archive_filename",
+                     "https://github.com/MichaelHatherly/Tectonic.jl/releases/download/tectonic-$(URIs.escapeuri("$(version)+$(build)"))/$archive_filename",
                      download_hash
                     )
                 ]
