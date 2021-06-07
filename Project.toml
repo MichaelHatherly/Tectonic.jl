@@ -1,7 +1,7 @@
 name = "Tectonic"
 uuid = "9ac5f52a-99c6-489f-af81-462ef484790f"
 authors = ["Michael Hatherly <michaelhatherly@gmail.com>"]
-version = "0.4.1"
+version = "0.5.0"
 
 [deps]
 Pkg = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
