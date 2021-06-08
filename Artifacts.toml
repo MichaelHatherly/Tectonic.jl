@@ -26,27 +26,26 @@ os = "windows"
 
 [[tectonic_bin]]
 arch = "x86_64"
-git-tree-sha1 = "90377d5e95c78fbad587b08a69b7ad1187b2cab3"
-os = "macos"
-
-    [[tectonic_bin.download]]
-    sha256 = "176bc1717958ac816a9417cb3588bc5060cab99b25791dcdf28ee4de1cda6258"
-    url = "https://github.com/MichaelHatherly/Tectonic.jl/releases/download/tectonic-0.5.0%2B1/tectonic-0.5.0+1-x86_64-apple-darwin14.tar.gz"
-
-[[tectonic_bin]]
-arch = "x86_64"
-git-tree-sha1 = "796bdc55e0355448696c7bb67eb9721698e81989"
-os = "windows"
-
-    [[tectonic_bin.download]]
-    sha256 = "746797ca93170db8deff636500c4d320d452b96e73bd043df5b656b19c8cb8d6"
-    url = "https://github.com/MichaelHatherly/Tectonic.jl/releases/download/tectonic-0.5.0%2B1/tectonic-0.5.0+1-x86_64-w64-mingw32.tar.gz"
-[[tectonic_bin]]
-arch = "x86_64"
-git-tree-sha1 = "4c94ff463ee2366923175aee94a8d2643eccaf78"
+git-tree-sha1 = "a4ce7276079c3429780a79c694e2e0f008f30c17"
 libc = "glibc"
 os = "linux"
 
     [[tectonic_bin.download]]
-    sha256 = "b782e1e30b72beb6d63d16d46113824a5c50af172cf28890bb7060be7bed44f1"
-    url = "https://github.com/MichaelHatherly/Tectonic.jl/releases/download/tectonic-0.5.0%2B1/tectonic-0.5.0+1-x86_64-linux-gnu.tar.gz"
+    sha256 = "4c35a260fa56dc561724736fd0df8b938bbf5da0a29aea56df6eb8e06074244a"
+    url = "https://github.com/MichaelHatherly/Tectonic.jl/releases/download/tectonic-0.5.1%2B1/tectonic-0.5.1+1-x86_64-linux-gnu.tar.gz"
+[[tectonic_bin]]
+arch = "x86_64"
+git-tree-sha1 = "1e7b2fb4271ad40bbd81fe323cc45cadecb98efd"
+os = "windows"
+
+    [[tectonic_bin.download]]
+    sha256 = "e231ff8d07e8dff492e9e74247d75e443e58c228fa4fcfd906edba448f6608e7"
+    url = "https://github.com/MichaelHatherly/Tectonic.jl/releases/download/tectonic-0.5.1%2B1/tectonic-0.5.1+1-x86_64-w64-mingw32.tar.gz"
+[[tectonic_bin]]
+arch = "x86_64"
+git-tree-sha1 = "a9eb0901d7076f72768d074c848fe5cae945d099"
+os = "macos"
+
+    [[tectonic_bin.download]]
+    sha256 = "421bdf8edbd0bc914b9cd369cf5774a5e21b3117053c18cf55fe739e1277dd01"
+    url = "https://github.com/MichaelHatherly/Tectonic.jl/releases/download/tectonic-0.5.1%2B1/tectonic-0.5.1+1-x86_64-apple-darwin14.tar.gz"
