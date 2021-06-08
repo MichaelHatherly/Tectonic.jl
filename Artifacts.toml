@@ -26,26 +26,26 @@ os = "windows"
 
 [[tectonic_bin]]
 arch = "x86_64"
-git-tree-sha1 = "a4ce7276079c3429780a79c694e2e0f008f30c17"
+git-tree-sha1 = "980a70aa97cdbf115d2a417320c1f98ae8dd6656"
 libc = "glibc"
 os = "linux"
 
     [[tectonic_bin.download]]
-    sha256 = "4c35a260fa56dc561724736fd0df8b938bbf5da0a29aea56df6eb8e06074244a"
-    url = "https://github.com/MichaelHatherly/Tectonic.jl/releases/download/tectonic-0.5.1%2B1/tectonic-0.5.1+1-x86_64-linux-gnu.tar.gz"
+    sha256 = "73342329d34ee068784b61815631c87c60108f2e79117553f95f4b3b53b3fee1"
+    url = "https://github.com/MichaelHatherly/Tectonic.jl/releases/download/tectonic-0.5.2%2B1/tectonic-0.5.2+1-x86_64-linux-gnu.tar.gz"
 [[tectonic_bin]]
 arch = "x86_64"
-git-tree-sha1 = "1e7b2fb4271ad40bbd81fe323cc45cadecb98efd"
+git-tree-sha1 = "5d3e8e43914a3641c69f98563538ced4ddb471ec"
 os = "windows"
 
     [[tectonic_bin.download]]
-    sha256 = "e231ff8d07e8dff492e9e74247d75e443e58c228fa4fcfd906edba448f6608e7"
-    url = "https://github.com/MichaelHatherly/Tectonic.jl/releases/download/tectonic-0.5.1%2B1/tectonic-0.5.1+1-x86_64-w64-mingw32.tar.gz"
+    sha256 = "ccd0a6fe19d5555fd94a3b74087b8c128e968fab7f331769eafa4d8deabe96f0"
+    url = "https://github.com/MichaelHatherly/Tectonic.jl/releases/download/tectonic-0.5.2%2B1/tectonic-0.5.2+1-x86_64-w64-mingw32.tar.gz"
 [[tectonic_bin]]
 arch = "x86_64"
-git-tree-sha1 = "a9eb0901d7076f72768d074c848fe5cae945d099"
+git-tree-sha1 = "7645e307dee79107b7891460ca093f1abdb57be3"
 os = "macos"
 
     [[tectonic_bin.download]]
-    sha256 = "421bdf8edbd0bc914b9cd369cf5774a5e21b3117053c18cf55fe739e1277dd01"
-    url = "https://github.com/MichaelHatherly/Tectonic.jl/releases/download/tectonic-0.5.1%2B1/tectonic-0.5.1+1-x86_64-apple-darwin14.tar.gz"
+    sha256 = "2b60884df428e99c0289288efbb13a0435bd2d89f6eff39e5fcec74d4b76f383"
+    url = "https://github.com/MichaelHatherly/Tectonic.jl/releases/download/tectonic-0.5.2%2B1/tectonic-0.5.2+1-x86_64-apple-darwin14.tar.gz"
