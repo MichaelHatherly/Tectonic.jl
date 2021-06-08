@@ -10,7 +10,7 @@ mktempdir() do dir
         @testset "Tectonic" begin
             @testset "tectonic" begin
                 @test isfile(binary())
-                @test version() == v"0.5.1"
+                @test version() == v"0.5.2"
                 # Compile a file, clean up afterwards.
                 @test !isfile("test.pdf")
                 @test tryrun() do
