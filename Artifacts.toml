@@ -26,26 +26,26 @@ os = "windows"
 
 [[tectonic_bin]]
 arch = "x86_64"
-git-tree-sha1 = "8fa2cc2b502f4599c9a0a11ad7c517d0e675ceb3"
+git-tree-sha1 = "725274ef63b9f01ca52358cc6790e3520cd625e9"
 libc = "glibc"
 os = "linux"
 
     [[tectonic_bin.download]]
-    sha256 = "78e22d523dbc918d85bec133ff30c1c0d2e0e0f9ab258e0157cda95bae04a738"
-    url = "https://github.com/MichaelHatherly/Tectonic.jl/releases/download/tectonic-0.6.0%2B1/tectonic-0.6.0+1-x86_64-linux-gnu.tar.gz"
+    sha256 = "724f635775565d04168869ddd0e0666267c97b966c84e82b3aeea4f69d90af65"
+    url = "https://github.com/MichaelHatherly/Tectonic.jl/releases/download/tectonic-0.6.1%2B1/tectonic-0.6.1+1-x86_64-linux-gnu.tar.gz"
 [[tectonic_bin]]
 arch = "x86_64"
-git-tree-sha1 = "9b11a09d24f23217dc541a81399d00bd821a8379"
-os = "macos"
-
-    [[tectonic_bin.download]]
-    sha256 = "fb2599714eeb77b8fde959aa2e0f2ffc1e554994f6b692adef4a6807ff199958"
-    url = "https://github.com/MichaelHatherly/Tectonic.jl/releases/download/tectonic-0.6.0%2B1/tectonic-0.6.0+1-x86_64-apple-darwin14.tar.gz"
-[[tectonic_bin]]
-arch = "x86_64"
-git-tree-sha1 = "98b5f9083d86385106e2992fbcb00a7529c2b170"
+git-tree-sha1 = "d02ae3cc24507d93b609f020c5063a5b28aee49a"
 os = "windows"
 
     [[tectonic_bin.download]]
-    sha256 = "ec35092dfe6b485ca023a01640f8946216885bd952ccc4efbba1207e973cc741"
-    url = "https://github.com/MichaelHatherly/Tectonic.jl/releases/download/tectonic-0.6.0%2B1/tectonic-0.6.0+1-x86_64-w64-mingw32.tar.gz"
+    sha256 = "c578b5c80f83035f5ce714d0f260185c02398c966e31d3478183ab1439f4c518"
+    url = "https://github.com/MichaelHatherly/Tectonic.jl/releases/download/tectonic-0.6.1%2B1/tectonic-0.6.1+1-x86_64-w64-mingw32.tar.gz"
+[[tectonic_bin]]
+arch = "x86_64"
+git-tree-sha1 = "af30270647cc191d9708f92fca0aec3ac7e5ecfd"
+os = "macos"
+
+    [[tectonic_bin.download]]
+    sha256 = "5eef939af6500dbad61e9f79916c67404f575925e2f82b809f9d39c9e6db07d1"
+    url = "https://github.com/MichaelHatherly/Tectonic.jl/releases/download/tectonic-0.6.1%2B1/tectonic-0.6.1+1-x86_64-apple-darwin14.tar.gz"
