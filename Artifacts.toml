@@ -26,26 +26,26 @@ os = "windows"
 
 [[tectonic_bin]]
 arch = "x86_64"
-git-tree-sha1 = "980a70aa97cdbf115d2a417320c1f98ae8dd6656"
+git-tree-sha1 = "8fa2cc2b502f4599c9a0a11ad7c517d0e675ceb3"
 libc = "glibc"
 os = "linux"
 
     [[tectonic_bin.download]]
-    sha256 = "73342329d34ee068784b61815631c87c60108f2e79117553f95f4b3b53b3fee1"
-    url = "https://github.com/MichaelHatherly/Tectonic.jl/releases/download/tectonic-0.5.2%2B1/tectonic-0.5.2+1-x86_64-linux-gnu.tar.gz"
+    sha256 = "78e22d523dbc918d85bec133ff30c1c0d2e0e0f9ab258e0157cda95bae04a738"
+    url = "https://github.com/MichaelHatherly/Tectonic.jl/releases/download/tectonic-0.6.0%2B1/tectonic-0.6.0+1-x86_64-linux-gnu.tar.gz"
 [[tectonic_bin]]
 arch = "x86_64"
-git-tree-sha1 = "5d3e8e43914a3641c69f98563538ced4ddb471ec"
-os = "windows"
-
-    [[tectonic_bin.download]]
-    sha256 = "ccd0a6fe19d5555fd94a3b74087b8c128e968fab7f331769eafa4d8deabe96f0"
-    url = "https://github.com/MichaelHatherly/Tectonic.jl/releases/download/tectonic-0.5.2%2B1/tectonic-0.5.2+1-x86_64-w64-mingw32.tar.gz"
-[[tectonic_bin]]
-arch = "x86_64"
-git-tree-sha1 = "7645e307dee79107b7891460ca093f1abdb57be3"
+git-tree-sha1 = "9b11a09d24f23217dc541a81399d00bd821a8379"
 os = "macos"
 
     [[tectonic_bin.download]]
-    sha256 = "2b60884df428e99c0289288efbb13a0435bd2d89f6eff39e5fcec74d4b76f383"
-    url = "https://github.com/MichaelHatherly/Tectonic.jl/releases/download/tectonic-0.5.2%2B1/tectonic-0.5.2+1-x86_64-apple-darwin14.tar.gz"
+    sha256 = "fb2599714eeb77b8fde959aa2e0f2ffc1e554994f6b692adef4a6807ff199958"
+    url = "https://github.com/MichaelHatherly/Tectonic.jl/releases/download/tectonic-0.6.0%2B1/tectonic-0.6.0+1-x86_64-apple-darwin14.tar.gz"
+[[tectonic_bin]]
+arch = "x86_64"
+git-tree-sha1 = "98b5f9083d86385106e2992fbcb00a7529c2b170"
+os = "windows"
+
+    [[tectonic_bin.download]]
+    sha256 = "ec35092dfe6b485ca023a01640f8946216885bd952ccc4efbba1207e973cc741"
+    url = "https://github.com/MichaelHatherly/Tectonic.jl/releases/download/tectonic-0.6.0%2B1/tectonic-0.6.0+1-x86_64-w64-mingw32.tar.gz"
