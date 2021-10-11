@@ -5,7 +5,7 @@ using URIs
 function tectonic()
     pkgname = "tectonic"
     origin = "https://github.com/tectonic-typesetting/tectonic/releases/download"
-    version = v"0.7.0"
+    version = v"0.7.1"
     build = 1
 
     downloads = Dict(

@@ -10,12 +10,12 @@ mktempdir() do dir
         @testset "Tectonic" begin
             @testset "tectonic" begin
                 @test isfile(binary())
-                @test version() == v"0.6.1"
+                @test version() == v"0.7.1"
                 # Compile a file, clean up afterwards.
                 @test !isfile("test.pdf")
                 @test tryrun() do
                     tectonic() do bin
-                        run(`$bin test.tex`)
+                        run(`$bin -w https://relay.fullyjustified.net/default_bundle.tar test.tex`)
                     end
                 end
                 @test isfile("test.pdf")
@@ -23,32 +23,11 @@ mktempdir() do dir
             @testset "biber" begin
                 @test isfile(Biber.binary())
                 @test Biber.version() == v"2.14.0"
-
-                # Test that we can use biber with tectonic. A single run of
-                # tectonic is needed to create the initial temp files, which
-                # must be retained. Then we run biber, followed by a complete
-                # tectonic run again.
-
                 @test tryrun() do
-                    tectonic() do bin
-                        run(`$bin --keep-intermediates --reruns 0 bib.tex`)
-                    end
-                end
-                @test isfile("bib.run.xml")
-                @test isfile("bib.pdf")
-                @test isfile("bib.aux")
-                @test isfile("bib.bcf")
-
-                @test tryrun() do
-                    biber() do bin
-                        run(`$bin bib`)
-                    end
-                end
-                @test isfile("bib.blg")
-
-                @test tryrun() do
-                    tectonic() do bin
-                        run(`$bin bib.tex`)
+                    biber() do _
+                        tectonic() do bin
+                            run(`$bin -w https://relay.fullyjustified.net/default_bundle.tar bib.tex`)
+                        end
                     end
                 end
                 @test isfile("bib.pdf")
