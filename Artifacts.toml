@@ -26,26 +26,26 @@ os = "windows"
 
 [[tectonic_bin]]
 arch = "x86_64"
-git-tree-sha1 = "725274ef63b9f01ca52358cc6790e3520cd625e9"
+git-tree-sha1 = "4902e5f4bd44dadc375f1fd69687b0397d26f026"
+os = "windows"
+
+    [[tectonic_bin.download]]
+    sha256 = "5068df80085dcce524280833550abd2661441c2fd339b41239325a3342c7ceeb"
+    url = "https://github.com/MichaelHatherly/Tectonic.jl/releases/download/tectonic-0.7.1%2B1/tectonic-0.7.1+1-x86_64-w64-mingw32.tar.gz"
+[[tectonic_bin]]
+arch = "x86_64"
+git-tree-sha1 = "14162c715ca3bf18c65382c933951c6e5d4696f5"
+os = "macos"
+
+    [[tectonic_bin.download]]
+    sha256 = "8e1c44c6afdd6af66cb6a6b647ae53d744ae5e6dfe40d2362d23bd128a6e8c82"
+    url = "https://github.com/MichaelHatherly/Tectonic.jl/releases/download/tectonic-0.7.1%2B1/tectonic-0.7.1+1-x86_64-apple-darwin14.tar.gz"
+[[tectonic_bin]]
+arch = "x86_64"
+git-tree-sha1 = "4e6be1718b95ca6b28c2072f7ec676a35a0aea94"
 libc = "glibc"
 os = "linux"
 
     [[tectonic_bin.download]]
-    sha256 = "724f635775565d04168869ddd0e0666267c97b966c84e82b3aeea4f69d90af65"
-    url = "https://github.com/MichaelHatherly/Tectonic.jl/releases/download/tectonic-0.6.1%2B1/tectonic-0.6.1+1-x86_64-linux-gnu.tar.gz"
-[[tectonic_bin]]
-arch = "x86_64"
-git-tree-sha1 = "d02ae3cc24507d93b609f020c5063a5b28aee49a"
-os = "windows"
-
-    [[tectonic_bin.download]]
-    sha256 = "c578b5c80f83035f5ce714d0f260185c02398c966e31d3478183ab1439f4c518"
-    url = "https://github.com/MichaelHatherly/Tectonic.jl/releases/download/tectonic-0.6.1%2B1/tectonic-0.6.1+1-x86_64-w64-mingw32.tar.gz"
-[[tectonic_bin]]
-arch = "x86_64"
-git-tree-sha1 = "af30270647cc191d9708f92fca0aec3ac7e5ecfd"
-os = "macos"
-
-    [[tectonic_bin.download]]
-    sha256 = "5eef939af6500dbad61e9f79916c67404f575925e2f82b809f9d39c9e6db07d1"
-    url = "https://github.com/MichaelHatherly/Tectonic.jl/releases/download/tectonic-0.6.1%2B1/tectonic-0.6.1+1-x86_64-apple-darwin14.tar.gz"
+    sha256 = "bbe375e4eec132f69354975dfa630e6499670900daa274538a4899ed674e69a2"
+    url = "https://github.com/MichaelHatherly/Tectonic.jl/releases/download/tectonic-0.7.1%2B1/tectonic-0.7.1+1-x86_64-linux-gnu.tar.gz"

@@ -12,7 +12,7 @@ binary() = joinpath(artifact"biber_bin", "biber$(Sys.iswindows() ? ".exe" : "")"
 """
     biber(f)
 
-Call function `f` with the *biber* binary path as argument.
+Call function `f` with the `biber` command available on `PATH` for the duration of `f`.
 
 ```julia
 biber() do bin
@@ -20,7 +20,14 @@ biber() do bin
 end
 ```
 """
-biber(f) = f(binary())
+function biber(f)
+    dir, bin = splitdir(binary())
+    path = ENV["PATH"]
+    pathsep = Sys.iswindows() ? ";" : ":"
+    withenv("PATH" => "$dir$pathsep$path") do
+        f(bin)
+    end
+end
 
 version() = VersionNumber(lstrip(!isnumeric, biber(bin -> readchomp(`$bin --version`))))
 
