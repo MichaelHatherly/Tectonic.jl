@@ -23,7 +23,8 @@ end
 function biber(f)
     dir, bin = splitdir(binary())
     path = ENV["PATH"]
-    withenv("PATH" => "$(dir):$path") do
+    pathsep = Sys.iswindows() ? ";" : ":"
+    withenv("PATH" => "$dir$pathsep$path") do
         f(bin)
     end
 end
