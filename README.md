@@ -11,7 +11,7 @@ version of the `biblatex` package provided with *tectonic*.
 
 This package wraps the official binaries for both bundled programs:
 
-  - [*tectonic* `0.7.1`][tectonic-binaries] (MIT license)
+  - [*tectonic* `0.8.0`][tectonic-binaries] (MIT license)
   - [*biber* `2.14`][biber-binaries] (Artistic 2.0 license)
 
 ## Supported Operating Systems and Julia Versions
