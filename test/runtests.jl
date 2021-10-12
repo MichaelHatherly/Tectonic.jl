@@ -10,12 +10,12 @@ mktempdir() do dir
         @testset "Tectonic" begin
             @testset "tectonic" begin
                 @test isfile(binary())
-                @test version() == v"0.7.1"
+                @test version() == v"0.8.0"
                 # Compile a file, clean up afterwards.
                 @test !isfile("test.pdf")
                 @test tryrun() do
                     tectonic() do bin
-                        run(`$bin -w https://relay.fullyjustified.net/default_bundle.tar test.tex`)
+                        run(`$bin test.tex`)
                     end
                 end
                 @test isfile("test.pdf")
@@ -26,7 +26,7 @@ mktempdir() do dir
                 @test tryrun() do
                     biber() do _
                         tectonic() do bin
-                            run(`$bin -w https://relay.fullyjustified.net/default_bundle.tar bib.tex`)
+                            run(`$bin bib.tex`)
                         end
                     end
                 end
